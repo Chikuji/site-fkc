@@ -1,14 +1,13 @@
 body{
     background-image: url('https://cdn.pixabay.com/photo/2018/01/26/18/21/matrix-3109378_960_720.jpg');
     background-size: auto 100vh;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Verdana, Helvetica, sans-serif;
     height: 100vh;
     
-
 }
 
 .menu {
-    background-color: white;
+    background-color: rgb(255, 0, 0);
 }
 
 .menu ul {
@@ -21,7 +20,7 @@ body{
 }
 
 a {
-    color:white;
+    color:rgb(255, 0, 0);
     text-decoration: none;
 
 }
@@ -32,7 +31,7 @@ a:hover {
 
 .site-subtitle,
 .site-title {
-    color:white;
+    color:rgb(255, 0, 0);
     text-align: center;
 }
 .site.subtitle {
