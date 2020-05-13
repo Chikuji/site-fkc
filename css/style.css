@@ -1,9 +1,10 @@
 body{
     background-image: url('https://cdn.pixabay.com/photo/2015/06/04/08/57/binary-797274_960_720.jpg');
-    background-size: auto 100vh;
+    /*background-repeat: no-repeat;*/
+    background-size: 100%;
     font-family: Verdana, Helvetica, sans-serif;
-    height: 100vh;
-    
+    height: 100%;
+
 }
 
 .menu {
