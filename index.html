@@ -1,26 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
-    <title>Felipe Kenji Chikuji</title>
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felipe Chikuji</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/c54e6ff457.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
     <header>
-        <nav>
+        <nav class="menu">
             <ul>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Portifólio</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#portfolio">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
-        <h1 class="site-title"> Felipe K Chikuji
-        </h1>
-        <h2 class="site-subtitle"> Dev { HTML-CSS }  
-            Em desenvolvimento ...[]'
-        </h2>
+        <div class="titulo">
+            <h1 class="site-title">Felipe Kenji Chikuji</h1>
+            <h2 class="site-subtitle">jr. frontend developer</h2>
+        </div>
     </header>
+
+
+    <section class="portfolio" id="portfolio">
+        <h2>Projetos</h2>
+
+        <div class="grid">
+            <figure>
+                <img class="img-portfolio" src="./img/alura.png" alt="Texto1">
+                <figcaption>Texto1</figcaption>
+            </figure>
+            <figure>
+                <img class="img-portfolio" src="./img/caelum.png" alt="Texto2">
+                <figcaption>Texto2</figcaption>
+            </figure>
+            <figure>
+                <img class="img-portfolio" src="./img/hispters.png" alt="Texto3">
+                <figcaption>Texto3</figcaption>
+            </figure>
+
+        </div>
+
+    </section>
+
+
+    <section class="contato" id="contato">
+        <h2>Contato</h2>
+        <div class="grid icons">
+            <a target="_blank" href="https://github.com/Chikuji">
+                <i class="fab fa-github"></i>
+            </a>
+            <a target="_blank" href="https://www.linkedin.com/in/felipe-kenji-chikuji">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a target="_blank" href="https://www.instagram.com/felipechikuji">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+        <footer>Feito com carinho 😍 </footer>
+    </section>
 </body>
+
 </html>

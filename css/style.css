@@ -1,14 +1,41 @@
-body{
-    background-image: url('https://cdn.pixabay.com/photo/2015/06/04/08/57/binary-797274_960_720.jpg');
-    /*background-repeat: no-repeat;*/
-    background-size: 100%;
-    font-family: Verdana, Helvetica, sans-serif;
-    height: 100%;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    background-image: url('https://cdn.pixabay.com/photo/2015/06/04/08/57/binary-797274_960_720.jpg');
+    background-size: 100%;
+    font-family: 'Roboto', Helvetica, sans-serif;
+    height: 100vh;
+}
+
+@media (min-width: 400px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 600px) {
+    body {
+        font-size: 22px;
+    }
+}
+
+header {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .menu {
-    background-color: rgb(255, 0, 0);
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100vw;
 }
 
 .menu ul {
@@ -20,21 +47,96 @@ body{
     list-style: none;
 }
 
-a {
-    color:rgb(255, 0, 0);
+.menu a {
+    color: teal;
+    display: block;
+    padding: 10px;
     text-decoration: none;
-
 }
 
-a:hover {
-    text-decoration: underline;
-}
-
-.site-subtitle,
 .site-title {
-    color:rgb(255, 0, 0);
+    color: whitesmoke;
+    font-size: 25px;
+    line-height: 1em;
+    margin-bottom: 15px;
     text-align: center;
 }
-.site.subtitle {
+
+.site-subtitle {
+    color: silver;
     font-style: italic;
+    font-weight: lighter;
+    text-align: center;
+    font-size: 15px;
+}
+
+.contato,
+.portfolio {
+    padding: 1em;
+}
+
+.contato h2,
+.portfolio h2 {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 2px;
+}
+
+.grid {
+    color: silver;
+    display: grid;
+    gap: 1em;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+@media (min-width: 400px) {
+    .contato,
+    .portfolio {
+        padding: 3em 2em 2em;
+        height: 100vh;
+    }
+    .grid {
+        grid-template-columns: 200px 200px;
+        height: calc(100vh - 4.5em - 75px);
+    }
+}
+
+@media (min-width: 940px) {
+    .contato,
+    .portfolio {
+        padding: 2em;
+    }
+    .grid {
+        grid-template-columns: repeat(3, 200px);
+        height: calc(100vh - 1em - 80px);
+        align-items: center;
+    }
+}
+
+.portfolio figcaption {
+    font-weight: bold;
+}
+
+.img-portfolio {
+    border-radius: 10px;
+    height: 180px;
+    object-fit: cover;
+    width: 180px;
+}
+
+.icons a {
+    grid-template-columns: repeat(3, 200px);
+    color: white;
+    font-size: 2em;
+}
+
+footer {
+    font-size: 15px;
+    margin-top: auto;
+    color: white;
+    padding: 16px;
+    text-align: center;
+    margin-bottom: 50px;
 }
