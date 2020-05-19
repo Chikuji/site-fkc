@@ -107,7 +107,7 @@ a {
 }
 
 .img-giff {
-    height: 100%;
+    height: 200px;
     width: 100%;
     padding-left: 20px;
     padding-right: 20px;
@@ -137,14 +137,14 @@ a {
 }
 
 .site-title {
-    font-size: 3em;
+    font-size: 2.5em;
     font-family: 'Roboto', Helvetica, sans-serif;
 }
 
 .site-subtitle {
     font-style: italic;
     font-family: 'Roboto', Helvetica, sans-serif;
-    line-height: 1.8em;
+    line-height: 1em;
 }
 
 .scroll-down {
@@ -200,7 +200,7 @@ a {
 
 .sobre p {
     color: white;
-    margin: 50px;
+    margin: 40px;
     text-indent: 1.4em;
     line-height: 2;
     margin-bottom: 1.5em;
