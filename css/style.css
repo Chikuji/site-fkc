@@ -264,7 +264,7 @@ a {
     display: grid;
     column-gap: 5em;
     row-gap: 5em;
-    min-height: 100vh;
+    min-height: 80vh;
 }
 
 .flip-card {
