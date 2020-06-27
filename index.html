@@ -59,27 +59,66 @@
         <p>
             Esse site foi desenvolvido durante a <a href="https://www.alura.com.br/imersao-css">Imersão CSS da Alura</a>
         </p>
-        
-                    <script SameSite="None; Secure" src="https://static.landbot.io/landbot-widget/landbot-widget-1.0.0.js"></script>
-         <script>
-             var myLandbot = new LandbotLivechat({
-             index: 'https://landbot.io/u/H-550743-CROF189TZBX1VEG5/index.html',
-              });
-            </script><script>
-              // Show a proactive message on landbot load
-             myLandbot.on('landbot-load', function() {
-              myLandbot.sendProactive({
-             "message": "Hey, você aí, corre aqui!!!",
-             "author": "landbot",
-             "avatar": "https://storage.googleapis.com/media.helloumi.com/brands/helloumi.png",
-             "extra": {
-              "hide_textbox": true
-             }
+
+        <script SameSite="None; Secure" src="https://static.landbot.io/landbot-widget/landbot-widget-1.0.0.js"></script>
+        <script>
+            var myLandbot = new LandbotLivechat({
+                index: 'https://landbot.io/u/H-550743-CROF189TZBX1VEG5/index.html',
             });
-             });
-            </script>
+        </script>
+        <script>
+            // Show a proactive message on landbot load
+            myLandbot.on('landbot-load', function() {
+                myLandbot.sendProactive({
+                    "message": "Hey, você aí, corre aqui!!!",
+                    "author": "landbot",
+                    "avatar": "https://storage.googleapis.com/media.helloumi.com/brands/helloumi.png",
+                    "extra": {
+                        "hide_textbox": true
+                    }
+                });
+            });
+        </script>
 
     </section>
+
+
+    <script>
+        var div = document.createElement('div');
+        div.className = 'fb-customerchat';
+        div.setAttribute('page_id', '101717738273008');
+        div.setAttribute('ref', '');
+        document.body.appendChild(div);
+        window.fbMessengerPlugins = window.fbMessengerPlugins || {
+            init: function() {
+                FB.init({
+                    appId: '1678638095724206',
+                    autoLogAppEvents: true,
+                    xfbml: true,
+                    version: 'v3.3'
+                });
+            },
+            callable: []
+        };
+        window.fbAsyncInit = window.fbAsyncInit || function() {
+            window.fbMessengerPlugins.callable.forEach(function(item) {
+                item();
+            });
+            window.fbMessengerPlugins.init();
+        };
+        setTimeout(function() {
+            (function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) {
+                    return;
+                }
+                js = d.createElement(s);
+                js.id = id;
+                js.src = "//connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        }, 0);
+    </script>
 
 
 
