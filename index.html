@@ -58,12 +58,24 @@
             <a href="https://www.alura.com.br/imersao-css">Imersão CSS da Alura</a>
         </p>
         
-        <script SameSite="None; Secure" src="https://static.landbot.io/landbot-widget/landbot-widget-1.0.0.js"></script>
-        <script>
-            var myLandbot = new LandbotPopup({
+                    <script SameSite="None; Secure" src="https://static.landbot.io/landbot-widget/landbot-widget-1.0.0.js"></script>
+         <script>
+             var myLandbot = new LandbotLivechat({
              index: 'https://landbot.io/u/H-550743-CROF189TZBX1VEG5/index.html',
-                });
-        </script>
+              });
+            </script><script>
+              // Show a proactive message on landbot load
+             myLandbot.on('landbot-load', function() {
+              myLandbot.sendProactive({
+             "message": "",
+             "author": "landbot",
+             "avatar": "https://storage.googleapis.com/media.helloumi.com/brands/helloumi.png",
+             "extra": {
+              "hide_textbox": true
+             }
+            });
+             });
+            </script>
 
     </section>
 
