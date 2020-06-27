@@ -220,9 +220,9 @@ a {
 
 .sobre .avatar {
     align-content: center;
-    clip-path: polygon(50% 0%, 70% 26%, 98% 35%, 81% 61%, 79% 91%, 50% 80%, 21% 91%, 21% 61%, 2% 35%, 30% 26%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
     height: calc(10% - 0em - 50px);
-    float: right;
+    float: left;
     margin-left: 90px;
     margin-right: 90px;
 }
@@ -241,9 +241,9 @@ a {
 
 @media (max-width: 499px) {
     .sobre .avatar {
-        clip-path: polygon(50% 0%, 70% 26%, 98% 35%, 81% 61%, 79% 91%, 50% 80%, 21% 91%, 21% 61%, 2% 35%, 30% 26%);
+        clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
         height: calc(50vh - 5em - 50px);
-        float: right;
+        float: left;
         margin-left: 50px;
         margin-right: 50px;
     }
