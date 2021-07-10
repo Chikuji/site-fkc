@@ -296,7 +296,7 @@ a {
     align-items: center;
     justify-content: center;
     background-color: rgba(255, 255, 255, .7);
-    height: 200px;
+    height: 100%;
     width: 100%;
     transform: rotateY(180deg);
 }
