@@ -313,9 +313,10 @@ a {
     transition: transform 500ms;
 }
 
-.img-portfolio:hover {
+
+/*.img-portfolio:hover {
     transform: scale(1.5) rotate(-5deg);
-}
+} */
 
 .contato .icons {
     text-align: center;
