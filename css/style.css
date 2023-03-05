@@ -7,61 +7,25 @@
 }
 
 body {
-    background-color: rgb(14, 94, 94);
-    background-size: auto 100vh;
-    font-family: 'Roboto', Helvetica, sans-serif;
+    background-color: #111;
+    font-family: 'Montserrat', sans-serif;
     height: 100vh;
-    font-size: 20px;
+    font-size: 16px;
+    color: #eee;
 }
 
 
 /* se a tela tiver pelo menos 499px vai carregar estes estilos */
 
-@media (max-width: 499px) {
+@media (min-width: 768px) {
     body {
-        font-size: 16px;
-    }
-    .portfolio .grid {
-        grid-template-columns: repeat(1, 260px);
-        align-content: center;
-        justify-content: center;
-        min-height: 100vh;
-    }
-}
-
-
-/* breakpoint */
-
-@media (min-width: 500px) {
-    body {
-        background-attachment: fixed;
-        background-size: cover;
         font-size: 18px;
     }
-    .portfolio .grid {
-        grid-template-columns: 240px 240px;
-        align-content: center;
-        justify-content: center;
-    }
 }
 
-@media (min-width: 1200px) {
-    .portfolio .grid {
-        grid-template-columns: repeat(4, 240px);
-    }
-}
-
-
-/* breakpoint */
-
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
     body {
         font-size: 20px;
-    }
-    .container {
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 1800px;
     }
 }
 
@@ -73,7 +37,120 @@ header {
 }
 
 .menu {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.9);
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    z-index: 1;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu li {
+    list-style: none;
+}
+.menu a {
+    display: block;
+    padding: 10px 20px;
+    transition: background-color .3s, color .3s;
+}
+
+.menu a:active,
+.menu a:hover {
+    background-color: #333;
+    color: #eee;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.img-giff {
+    height: 200px;
+    width: 100%;
+    padding: 20px;
+}
+
+.titulo {
+    transform: scale(0.2) translateY(50vh);
+    opacity: 0;
+    animation: 1s ease 50ms animacaoTitulo forwards;
+}
+
+@keyframes animacaoTitulo {
+    from {
+        transform: scale(0.2) translateY(50vh);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1) translateY(0);
+        opacity: 1;
+    }
+}
+
+.site-subtitle,
+.site-title {
+    color: #eee;
+    text-align: center;
+}
+
+.site-title {
+    font-size: 2.5em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.site-subtitle {
+    font-style: italic;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1em;
+}
+
+Certainly! Here's an example of a possible new CSS file, with different colors and styles:
+
+css
+Copy code
+/* reset geral do css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #111;
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    font-size: 16px;
+    color: #eee;
+}
+
+@media (min-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 992px) {
+    body {
+        font-size: 20px;
+    }
+}
+
+header {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    background-color: rgba(255, 255, 255, 0.9);
     position: fixed;
     width: 100vw;
     top: 0;
@@ -97,20 +174,19 @@ header {
 
 .menu a:active,
 .menu a:hover {
-    background-color: teal;
-    color: white;
+    background-color: #333;
+    color: #eee;
 }
 
 a {
-    color: teal;
+    color: #fff;
     text-decoration: none;
 }
 
 .img-giff {
     height: 200px;
     width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 20px;
 }
 
 .titulo {
@@ -132,23 +208,158 @@ a {
 
 .site-subtitle,
 .site-title {
-    color: whitesmoke;
+    color: #eee;
     text-align: center;
 }
 
 .site-title {
     font-size: 2.5em;
-    font-family: 'Roboto', Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .site-subtitle {
     font-style: italic;
-    font-family: 'Roboto', Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     line-height: 1em;
 }
 
 .scroll-down {
-    color: whitesmoke;
+    color: #eee;
+    position: absolute;
+    top: 94%;
+    left: 48%;
+}
+
+.fa-angle-down {
+    font-size: 3rem;
+    -webkit-animation: bounce .6s infinite;
+    animation: bounce .6s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes bounce {
+    0% {
+        margin-top: 0;
+    }
+    100% {
+        margin-top: 10px;
+    }
+}
+Certainly! Here's an example of a possible new CSS file, with different colors and styles:
+
+css
+Copy code
+/* reset geral do css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #111;
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    font-size: 16px;
+    color: #eee;
+}
+
+@media (min-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 992px) {
+    body {
+        font-size: 20px;
+    }
+}
+
+header {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    background-color: rgba(255, 255, 255, 0.9);
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    z-index: 1;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu a {
+    display: block;
+    padding: 10px 20px;
+    transition: background-color .3s, color .3s;
+}
+
+.menu a:active,
+.menu a:hover {
+    background-color: #333;
+    color: #eee;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.img-giff {
+    height: 200px;
+    width: 100%;
+    padding: 20px;
+}
+
+.titulo {
+    transform: scale(0.2) translateY(50vh);
+    opacity: 0;
+    animation: 1s ease 50ms animacaoTitulo forwards;
+}
+
+@keyframes animacaoTitulo {
+    from {
+        transform: scale(0.2) translateY(50vh);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1) translateY(0);
+        opacity: 1;
+    }
+}
+
+.site-subtitle,
+.site-title {
+    color: #eee;
+    text-align: center;
+}
+
+.site-title {
+    font-size: 2.5em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.site-subtitle {
+    font-style: italic;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1em;
+}
+
+.scroll-down {
+    color: #eee;
     position: absolute;
     top: 94%;
     left: 48%;
@@ -177,14 +388,14 @@ a {
 }
 
 .contato {
-    background-color: rgb(18, 134, 134);
+    background-color: #333;
     padding: 0em;
     min-height: 20vh;
     padding-left: 1em;
 }
 
 .contato h2 {
-    color: whitesmoke;
+    color: #eee;
     font-size: 2em;
     margin-top: 1em;
 }
